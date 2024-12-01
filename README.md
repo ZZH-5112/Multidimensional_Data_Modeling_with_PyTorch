@@ -48,7 +48,7 @@ pip install -r requirements.txt
 使用默认参数训练模型：
 
 ```bash
-python main_mutil_dim.py --epochs 20 --batch-size 128 --lr 0.001 --model transformer
+python main.py --epochs 20 --batch-size 128 --lr 0.001 --model transformer
 ```
 
 ### 修改数据维度示例

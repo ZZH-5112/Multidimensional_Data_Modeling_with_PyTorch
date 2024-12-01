@@ -10,7 +10,7 @@ from typing import List, Tuple, Dict
 
 #*************Import Model Structure***************************************
 
-from models import MultidimTransformerModel, MultidimMamba2Model
+from models import MultidimTransformerModel
 
 
 '''
@@ -219,8 +219,8 @@ def main():
     #model = NdMamba2(64, 128, 64).cuda()
     if args.model == 'transformer':
         model = MultidimTransformerModel(input_schema, output_schema).to(device)
-    elif args.model == 'mamba2':
-        model = MultidimMamba2Model(input_schema, output_schema, device=device).to(device)
+    #elif args.model == 'mamba2':
+    #    model = MultidimMamba2Model(input_schema, output_schema, device=device).to(device)
     
     
 
